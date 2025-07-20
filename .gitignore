@@ -1,0 +1,9 @@
+venv/
+env/
+*.env
+venv
+venv/
+joetib/
+results/
+result/
+.DS_Store
