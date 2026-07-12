@@ -1,3 +1,11 @@
 dataset/final.json filter=lfs diff=lfs merge=lfs -text
 dataset/final2.json filter=lfs diff=lfs merge=lfs -text
 train-00000-of-00001.parquet filter=lfs diff=lfs merge=lfs -text
+merged_asw_bible_verses.json filter=lfs diff=lfs merge=lfs -text
+enhanced_merged_asw_bible_verses.json filter=lfs diff=lfs merge=lfs -text
+bible_verses.json filter=lfs diff=lfs merge=lfs -text
+dataset/bible_verses.json filter=lfs diff=lfs merge=lfs -text
+niv_bible_verses.json filter=lfs diff=lfs merge=lfs -text
+merged-twi-data.json filter=lfs diff=lfs merge=lfs -text
+twi-asw_bible_verses.json filter=lfs diff=lfs merge=lfs -text
+eng-asw_bible_verses.json filter=lfs diff=lfs merge=lfs -text

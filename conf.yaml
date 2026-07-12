@@ -1,0 +1,36 @@
+
+task: llm-sft
+base_model: EleutherAI/pythia-410m-deduped-v0
+project_name: my-autotrain-llm
+log: tensorboard
+backend: local
+
+data:
+  path: ./cleaned-dataset/
+  train_split: train
+  valid_split: null
+  chat_template: null
+  column_mapping:
+    text_column: text
+
+params:
+  block_size: 1024
+  lr: 0.0002
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+  epochs: 5
+  batch_size: 1
+  gradient_accumulation: 4
+  mixed_precision: none
+  peft: True
+  quantization: none
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  unsloth: False
+
+hub:
+  username: ${HF_USERNAME}
+  token: ${HF_TOKEN}
+  push_to_hub: True
+  repo_id: en-twi-410m
